@@ -10,11 +10,11 @@ int main (void){
 
         PORTB = PORTB | (1 << PORTB7);
 
-        _delay_ms(5000);
+        _delay_ms(500);
 
         PORTB = PORTB & ~(1 << PORTB7);
 
-        _delay_ms(5000);
+        _delay_ms(500);
 
     }
 
