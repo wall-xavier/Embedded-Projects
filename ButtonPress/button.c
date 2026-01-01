@@ -11,9 +11,20 @@ int main(void){
 
         if(PINE & (1 << 4)){
 
-            PORTG |= (1 << 5);
+            for(int i = 0; i < 10; i++){
+                
+                PORTG |= (1 << 5);
+                
+                _delay_ms(1000);
+            
+                PORTG &= ~(1 << 5);
 
-        }else{
+                _delay_ms(1000);
+
+            }
+
+        }
+        else{
 
             PORTG &= ~(1 << 5);
 
